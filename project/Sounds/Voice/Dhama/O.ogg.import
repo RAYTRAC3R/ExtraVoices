@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/O.ogg-5b7e45fe7b85a7a7cccad6c873a8b949.oggstr"
+
+[deps]
+
+source_file="res://Sounds/Voice/Dhama/O.ogg"
+dest_files=[ "res://.import/O.ogg-5b7e45fe7b85a7a7cccad6c873a8b949.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
