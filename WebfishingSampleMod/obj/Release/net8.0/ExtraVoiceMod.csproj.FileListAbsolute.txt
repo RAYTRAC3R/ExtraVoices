@@ -1,0 +1,13 @@
+C:\samidev\ExtraVoices\WebfishingSampleMod\bin\Release\net8.0\ExtraVoiceMod.deps.json
+C:\samidev\ExtraVoices\WebfishingSampleMod\bin\Release\net8.0\ExtraVoiceMod.dll
+C:\samidev\ExtraVoices\WebfishingSampleMod\bin\Release\net8.0\ExtraVoiceMod.pdb
+C:\samidev\ExtraVoices\WebfishingSampleMod\obj\Release\net8.0\ExtraVoiceMod.csproj.AssemblyReference.cache
+C:\samidev\ExtraVoices\WebfishingSampleMod\obj\Release\net8.0\ExtraVoiceMod.GeneratedMSBuildEditorConfig.editorconfig
+C:\samidev\ExtraVoices\WebfishingSampleMod\obj\Release\net8.0\ExtraVoiceMod.AssemblyInfoInputs.cache
+C:\samidev\ExtraVoices\WebfishingSampleMod\obj\Release\net8.0\ExtraVoiceMod.AssemblyInfo.cs
+C:\samidev\ExtraVoices\WebfishingSampleMod\obj\Release\net8.0\ExtraVoiceMod.csproj.CoreCompileInputs.cache
+C:\samidev\ExtraVoices\WebfishingSampleMod\obj\Release\net8.0\ExtraVoiceMod.sourcelink.json
+C:\samidev\ExtraVoices\WebfishingSampleMod\obj\Release\net8.0\ExtraVoiceMod.dll
+C:\samidev\ExtraVoices\WebfishingSampleMod\obj\Release\net8.0\refint\ExtraVoiceMod.dll
+C:\samidev\ExtraVoices\WebfishingSampleMod\obj\Release\net8.0\ExtraVoiceMod.pdb
+C:\samidev\ExtraVoices\WebfishingSampleMod\obj\Release\net8.0\ref\ExtraVoiceMod.dll

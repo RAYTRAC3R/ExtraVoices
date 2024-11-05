@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/E.ogg-bd7ef38e18a51ea8629100e0e695957c.oggstr"
+
+[deps]
+
+source_file="res://Sounds/Voice/Minty/E.ogg"
+dest_files=[ "res://.import/E.ogg-bd7ef38e18a51ea8629100e0e695957c.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -20,12 +20,12 @@ public class ExtraVoiceMod(Config config) : IScriptMod {
         foreach (var token in tokens) {
             if (waiter.Check(token)) {
                 var voiceOption = _config.VoiceOption;
-                var validOptions = new[] { "NewVoice", "OldVoice", "Animalese" };
+                //var validOptions = new[] { "NewVoice", "OldVoice", "Animalese" };
 
-                if (!validOptions.Contains(voiceOption))
-                {
-                    voiceOption = "NewVoice";
-                }
+                //if (!validOptions.Contains(voiceOption))
+                //{
+                //    voiceOption = "NewVoice";
+                //}
 
                 // found our match, swap it out for the voice option
                 yield return new ConstantToken(new StringVariant(voiceOption));
