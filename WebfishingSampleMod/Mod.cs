@@ -8,6 +8,7 @@ public class Mod : IMod {
     public Mod(IModInterface modInterface) {
         this.Config = modInterface.ReadConfig<Config>();
         modInterface.RegisterScriptMod(new ExtraVoiceMod(Config));
+        modInterface.RegisterScriptMod(new PlayerDataMod(Config));
         modInterface.Logger.Information("ExtraVoice's DLL has loaded!");
     }
 

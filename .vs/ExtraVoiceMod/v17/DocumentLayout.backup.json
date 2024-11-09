@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\samidev\\ExtraVoices\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{23B505B3-8468-4B5C-BC32-DDC627920463}|WebfishingSampleMod\\ExtraVoiceMod.csproj|c:\\samidev\\extravoices\\webfishingsamplemod\\extravoicemod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23B505B3-8468-4B5C-BC32-DDC627920463}|WebfishingSampleMod\\ExtraVoiceMod.csproj|solutionrelative:webfishingsamplemod\\extravoicemod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23B505B3-8468-4B5C-BC32-DDC627920463}|WebfishingSampleMod\\ExtraVoiceMod.csproj|c:\\samidev\\extravoices\\webfishingsamplemod\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23B505B3-8468-4B5C-BC32-DDC627920463}|WebfishingSampleMod\\ExtraVoiceMod.csproj|solutionrelative:webfishingsamplemod\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23B505B3-8468-4B5C-BC32-DDC627920463}|WebfishingSampleMod\\ExtraVoiceMod.csproj|c:\\samidev\\extravoices\\webfishingsamplemod\\playerdatamod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23B505B3-8468-4B5C-BC32-DDC627920463}|WebfishingSampleMod\\ExtraVoiceMod.csproj|solutionrelative:webfishingsamplemod\\playerdatamod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23B505B3-8468-4B5C-BC32-DDC627920463}|WebfishingSampleMod\\ExtraVoiceMod.csproj|c:\\samidev\\extravoices\\webfishingsamplemod\\mod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23B505B3-8468-4B5C-BC32-DDC627920463}|WebfishingSampleMod\\ExtraVoiceMod.csproj|solutionrelative:webfishingsamplemod\\mod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerDataMod.cs",
+              "DocumentMoniker": "C:\\samidev\\ExtraVoices\\WebfishingSampleMod\\PlayerDataMod.cs",
+              "RelativeDocumentMoniker": "WebfishingSampleMod\\PlayerDataMod.cs",
+              "ToolTip": "C:\\samidev\\ExtraVoices\\WebfishingSampleMod\\PlayerDataMod.cs",
+              "RelativeToolTip": "WebfishingSampleMod\\PlayerDataMod.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T01:00:52.348Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Mod.cs",
+              "DocumentMoniker": "C:\\samidev\\ExtraVoices\\WebfishingSampleMod\\Mod.cs",
+              "RelativeDocumentMoniker": "WebfishingSampleMod\\Mod.cs",
+              "ToolTip": "C:\\samidev\\ExtraVoices\\WebfishingSampleMod\\Mod.cs",
+              "RelativeToolTip": "WebfishingSampleMod\\Mod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T18:33:19.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExtraVoiceMod.cs",
+              "DocumentMoniker": "C:\\samidev\\ExtraVoices\\WebfishingSampleMod\\ExtraVoiceMod.cs",
+              "RelativeDocumentMoniker": "WebfishingSampleMod\\ExtraVoiceMod.cs",
+              "ToolTip": "C:\\samidev\\ExtraVoices\\WebfishingSampleMod\\ExtraVoiceMod.cs",
+              "RelativeToolTip": "WebfishingSampleMod\\ExtraVoiceMod.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAUwFcAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T18:33:11.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Config.cs",
+              "DocumentMoniker": "C:\\samidev\\ExtraVoices\\WebfishingSampleMod\\Config.cs",
+              "RelativeDocumentMoniker": "WebfishingSampleMod\\Config.cs",
+              "ToolTip": "C:\\samidev\\ExtraVoices\\WebfishingSampleMod\\Config.cs",
+              "RelativeToolTip": "WebfishingSampleMod\\Config.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T18:32:57.427Z",
+              "EditorCaption": ""
             }
           ]
         }

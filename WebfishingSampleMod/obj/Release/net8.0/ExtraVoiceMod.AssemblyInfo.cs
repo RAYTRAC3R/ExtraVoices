@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExtraVoiceMod")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0.0+68102b87786fb21335eb7a758f4d1769117cfe88")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0.0+37a4220ae6e488eaf4f548f0cb8cb77d01ee5634")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExtraVoiceMod")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExtraVoiceMod")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

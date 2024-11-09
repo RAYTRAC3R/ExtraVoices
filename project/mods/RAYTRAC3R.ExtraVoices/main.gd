@@ -1,13 +1,11 @@
 extends Node
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+var PlayerAPI
 
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
+func voice_bank():
 	Globals.voice_bank.clear()
 	
 	print("Creating Voice Bank...")
@@ -17,14 +15,10 @@ func _ready():
 	var dir = Directory.new()
 	var path = "res://Sounds/Voice/"
 	
-	DebugScreen._add_line("Voice Direct Loading")
-	
 	if dir.open(path) != OK:
-		DebugScreen._add_line("Voice Direct Error")
 		print("Error loading voice directory.")
 		return 
 	
-	DebugScreen._add_line("Voice Direct Found")
 	dir.list_dir_begin(true, true)
 	while true:
 		var file = dir.get_next()
@@ -38,24 +32,19 @@ func _ready():
 		Globals.voice_bank[directory] = {}
 		
 		if dir.open(path + directory) != OK:
-			DebugScreen._add_line("Voice Subdirect error, " + str(directory))
 			print("Error loading voice subdirectory ", directory)
 			break
 		
-		DebugScreen._add_line("Voice Subdirect success, " + str(directory))
 		
 		dir.list_dir_begin(true, true)
 		while true:
 			var file = dir.get_next()
 			
-			DebugScreen._add_line("Reading file " + str(file))
 			
 			if file == "":
-				DebugScreen._add_line("Voice files end here")
 				
 				break
 			elif file.ends_with(".ogg.import"):
-				DebugScreen._add_line("OGG Voice access: " + str(file))
 				
 				var f = File.new()
 				f.open(path + directory + "/" + file, File.READ)
@@ -68,16 +57,45 @@ func _ready():
 						var l = line.split("=")[1]
 						final_path = l.replace("\"", "")
 				
-				DebugScreen._add_line(str(final_path))
 				
 				var end = load(final_path)
 				Globals.voice_bank[directory][file.replace(".ogg.import", "")] = end
 				resource_count += 1
 	
 	dir.list_dir_end()
-	DebugScreen._add_line("Voice Direct: " + str(Globals.voice_bank))
+	
+func get_player_voice():
+	if Network.PLAYING_OFFLINE:
+		return
+		
+func readPackets():
+	if Network.PLAYING_OFFLINE: return
+	
+	var PACKET_SIZE = Steam.getAvailableP2PPacketSize(4)
+	if PACKET_SIZE > 0:
+		var PACKET = Steam.readP2PPacket(PACKET_SIZE, 4)
+		
+		if PACKET.empty():
+			print("Error! Empty Packet!")
+		
+		var data = bytes2var(PACKET.data.decompress_dynamic( - 1, File.COMPRESSION_GZIP))
+		
+		#PlayerData._send_notification("[RECEIVE NET] from: " + str(data.steamid) + " ... " + str(data))
+
+		emit_signal("tourney_net", data.steamid, data)
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _ready():
+	PlayerAPI = get_node_or_null("/root/BlueberryWolfiAPIs/PlayerAPI")
+	PlayerAPI.connect("_player_added", self, "init_player")
+	PlayerAPI.connect("_ingame", self, "init_player")
+	voice_bank()
+
+func init_player(player: Actor):
+	# example:
+	print(PlayerAPI.get_player_name(player))
+	
+	
+func _process(delta):
+	if Network.STEAM_LOBBY_ID > 0:
+		readPackets()
