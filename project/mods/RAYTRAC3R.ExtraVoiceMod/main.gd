@@ -1,10 +1,16 @@
 extends Node
 
 
-var PlayerAPI
+onready var TackleBox := $"/root/TackleBox"
+
+var config:Dictionary = {
+  "Options": "Base Options are: NewVoice, OldVoice, Minty, Dhama",
+  "VoiceOption": "NewVoice",
+  "ModlessVoiceOption": "NewVoice"
+}
 
 
-# Called when the node enters the scene tree for the first time.
+#code kinda just stolen from base game
 func voice_bank():
 	Globals.voice_bank.clear()
 	
@@ -64,38 +70,23 @@ func voice_bank():
 	
 	dir.list_dir_end()
 	
-func get_player_voice():
-	if Network.PLAYING_OFFLINE:
-		return
-		
-func readPackets():
-	if Network.PLAYING_OFFLINE: return
-	
-	var PACKET_SIZE = Steam.getAvailableP2PPacketSize(4)
-	if PACKET_SIZE > 0:
-		var PACKET = Steam.readP2PPacket(PACKET_SIZE, 4)
-		
-		if PACKET.empty():
-			print("Error! Empty Packet!")
-		
-		var data = bytes2var(PACKET.data.decompress_dynamic( - 1, File.COMPRESSION_GZIP))
-		
-		#PlayerData._send_notification("[RECEIVE NET] from: " + str(data.steamid) + " ... " + str(data))
-
-		emit_signal("tourney_net", data.steamid, data)
-
-
 func _ready():
-	PlayerAPI = get_node_or_null("/root/BlueberryWolfiAPIs/PlayerAPI")
-	PlayerAPI.connect("_player_added", self, "init_player")
-	PlayerAPI.connect("_ingame", self, "init_player")
+	TackleBox.connect("mod_config_updated", self, "_update_config")
+	
+	_init_config(TackleBox.get_mod_config("RAYTRAC3R.ExtraVoiceMod"));
 	voice_bank()
+	
+#code kinda just stolen from VeryUnlethalCoalition's YAAM
+func _init_config(conf:Dictionary):
+	if config.size() != conf.size():
+		for key in config.keys():
+			if !conf.has(key):
+				conf[key] = config[key]
+	config = conf
+	print(conf)
 
-func init_player(player: Actor):
-	# example:
-	print(PlayerAPI.get_player_name(player))
-	
-	
-func _process(delta):
-	if Network.STEAM_LOBBY_ID > 0:
-		readPackets()
+func _update_config(mod_id, config):
+	if mod_id == "RAYTRAC3R.ExtraVoiceMod":
+		self.config = config
+		PlayerData.player_voicebank = self.config["VoiceOption"]
+		PlayerData.peer_voicebank = self.config["ModlessVoiceOption"]

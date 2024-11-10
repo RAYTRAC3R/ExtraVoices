@@ -11,3 +11,6 @@ C:\samidev\ExtraVoices\WebfishingSampleMod\obj\Release\net8.0\ExtraVoiceMod.dll
 C:\samidev\ExtraVoices\WebfishingSampleMod\obj\Release\net8.0\refint\ExtraVoiceMod.dll
 C:\samidev\ExtraVoices\WebfishingSampleMod\obj\Release\net8.0\ExtraVoiceMod.pdb
 C:\samidev\ExtraVoices\WebfishingSampleMod\obj\Release\net8.0\ref\ExtraVoiceMod.dll
+C:\samidev\ExtraVoices\manifestation\GDWeave\mods\RAYTRAC3R.ExtraVoiceMod\ExtraVoiceMod.deps.json
+C:\samidev\ExtraVoices\manifestation\GDWeave\mods\RAYTRAC3R.ExtraVoiceMod\ExtraVoiceMod.dll
+C:\samidev\ExtraVoices\manifestation\GDWeave\mods\RAYTRAC3R.ExtraVoiceMod\ExtraVoiceMod.pdb

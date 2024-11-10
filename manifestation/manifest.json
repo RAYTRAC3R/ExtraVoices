@@ -1,0 +1,10 @@
+{
+  "name": "AlternateVoices",
+  "version_number": "1.0.4",
+  "website_url": "https://github.com/RAYTRAC3R/ExtraVoices",
+  "description": "Mod to swap out the player's voice using a config in TackleBox.",
+  "dependencies": [
+    "NotNet-GDWeave-2.0.13",
+    "PuppyGirl-TackleBox-0.4.1"
+  ]
+}

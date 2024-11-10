@@ -1,0 +1,15 @@
+{
+  "Id": "RAYTRAC3R.ExtraVoiceMod",
+  "AssemblyPath": "RAYTRAC3R.ExtraVoiceMod.dll",
+  "PackPath": "RAYTRAC3R.ExtraVoiceMod.pck",
+  "Dependencies": [
+    "TackleBox"
+  ],
+  "Metadata": {
+    "Name": "AlternateVoices",
+    "Author": "RAYTRAC3R",
+    "Version": "1.0.4",
+    "Description": "Mod to swap out the player's voice using a config in TackleBox.",
+    "Homepage": "https://github.com/RAYTRAC3R/ExtraVoices"
+  }
+}

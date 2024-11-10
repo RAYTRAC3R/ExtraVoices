@@ -85,7 +85,9 @@ public class ExtraVoiceMod(Config config) : IScriptMod {
                 yield return new Token(TokenType.Comma);
                 yield return new IdentifierToken("voicebank");
                 yield return new Token(TokenType.OpAssign);
-                yield return new ConstantToken(new StringVariant("NewVoice"));
+                yield return new IdentifierToken("PlayerData");
+                yield return new Token(TokenType.Period);
+                yield return new IdentifierToken("peer_voicebank");
                 //yield return new IdentifierToken("PlayerData");
                 //yield return new Token(TokenType.Period);
                 //yield return new IdentifierToken("player_voicebank");

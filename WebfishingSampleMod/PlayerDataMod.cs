@@ -28,6 +28,7 @@ public class PlayerDataMod(Config config) : IScriptMod
             if (waiter.Check(token))
             {
                 var voiceOption = _config.VoiceOption;
+                var peerVoiceOption = _config.ModlessVoiceOption;
 
                 yield return token;
                 yield return new Token(TokenType.Newline);
@@ -35,6 +36,11 @@ public class PlayerDataMod(Config config) : IScriptMod
                 yield return new IdentifierToken("player_voicebank");
                 yield return new Token(TokenType.OpAssign);
                 yield return new ConstantToken(new StringVariant(voiceOption));
+                yield return new Token(TokenType.Newline);
+                yield return new Token(TokenType.PrVar);
+                yield return new IdentifierToken("peer_voicebank");
+                yield return new Token(TokenType.OpAssign);
+                yield return new ConstantToken(new StringVariant(peerVoiceOption));
                 yield return new Token(TokenType.Newline);
             }
             else

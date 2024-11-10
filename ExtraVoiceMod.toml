@@ -1,0 +1,23 @@
+id = "RAYTRAC3R.ExtraVoiceMod"
+name = "AlternateVoices"
+description = "Mod to swap out the player's voice using a config in TackleBox."
+version = "1.0.4"
+homepage = "https://github.com/RAYTRAC3R/ExtraVoices"
+author = "RAYTRAC3R"
+
+icon = "icon.png"
+readme = "README.md"
+changelog = "CHANGELOG.md" # optional
+
+# both are optional here, pick what you want
+[project]
+csharp = "C:/samidev/ExtraVoices/WebfishingSampleMod/ExtraVoiceMod.csproj"
+godot = "C:/samidev/ExtraVoices/project/project.godot"
+
+[[dependencies]]
+thunderstore_version = "NotNet-GDWeave-2.0.13"
+
+# example dependency
+[[dependencies]]
+id = "TackleBox"
+thunderstore_version = "PuppyGirl-TackleBox-0.4.1"
